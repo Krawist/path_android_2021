@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/semi_fab_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="facebook"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textStyle="bold"
+            android:textColor="@color/facebook_color"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_round_search_24"
+            android:background="@drawable/gray_background"
+            app:tint="#000"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/semi_fab_margin">
+
+            <ImageView
+                android:id="@+id/icone_messenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:tint="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_round_messenger_24"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/gray_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bacground_recherche"
+                android:text="9+"
+                android:backgroundTint="#EC407A"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textSize="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="@id/icone_messenger"
+                app:layout_constraintStart_toEndOf="@id/icone_messenger"
+                app:layout_constraintTop_toTopOf="@id/icone_messenger"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_home_24"
+                app:tint="@color/facebook_color"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/semi_fab_margin"
+                android:background="@color/facebook_color"/>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/semi_fab_margin">
+
+            <ImageView
+                android:id="@+id/icone_discussion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#000"
+                android:padding="2dp"
+                android:alpha=".55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_outline_people_alt_24"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/facebook_menu_icon_dot_background"
+                android:text="9"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textSize="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="@id/icone_discussion"
+                app:layout_constraintStart_toEndOf="@id/icone_discussion"
+                app:layout_constraintTop_toTopOf="@id/icone_discussion"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/semi_fab_margin">
+
+            <ImageView
+                android:id="@+id/icone_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#000"
+                android:padding="2dp"
+                android:alpha=".55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_outline_people_community_24"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/semi_fab_margin">
+
+            <ImageView
+                android:id="@+id/icone_ondemand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#000"
+                android:padding="2dp"
+                android:alpha=".55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_round_ondemand_video_24"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/facebook_menu_icon_dot_background"
+                android:text="5"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textSize="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="@id/icone_ondemand"
+                app:layout_constraintStart_toEndOf="@id/icone_ondemand"
+                app:layout_constraintTop_toTopOf="@id/icone_ondemand"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/semi_fab_margin">
+
+            <ImageView
+                android:id="@+id/icone_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#000"
+                android:alpha=".55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:rotation="-10"
+                android:src="@drawable/ic_round_notifications_none_24"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:background="@drawable/bacground_recherche_with_white_border"
+                android:text="99+"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                android:textSize="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="@id/icone_notifications"
+                app:layout_constraintStart_toEndOf="@id/icone_notifications"
+                app:layout_constraintTop_toTopOf="@id/icone_notifications"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/semi_fab_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#000"
+                android:padding="2dp"
+                android:alpha=".55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_round_dehaze_24"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:alpha=".2"/>
+
+</LinearLayout>
